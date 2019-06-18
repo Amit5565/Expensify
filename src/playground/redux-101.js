@@ -1,5 +1,13 @@
 import {createStore} from 'redux'
 
+//Action generators -functions that return action objects
+
+
+const incrementby=()=>({
+  
+    type:'INCREMENT'
+})
+
 const store=createStore((state={count:0},action)=>{
    switch(action.type){
       
@@ -34,10 +42,7 @@ store.dispatch({
 
 });
 
-store.dispatch({
-    type:'INCREMENT',
-
-});
+store.dispatch(incrementby());
 
 
 store.dispatch({
