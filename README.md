@@ -21,4 +21,4 @@ default name to object elemnts can also be given
 const address=['Model Town','Delhi',110009];
 const[city, state, pincode]=address;
 
-console.log(`Amit lives in ${city} that is in ${state} and has pincode of ${pincode}`);
+console.log(`Amit lives in ${city} that is in ${state} and has pincode of ${pincode}`);# BudgetApp
