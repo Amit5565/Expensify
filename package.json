@@ -4,11 +4,6 @@
   "main": "index.js",
   "author": "Amit Kumar Singh",
   "license": "MIT",
-  "engines": {
-    "node": "10.10.0",
-    "npm": "6.4.1",
-    "yarn": "1.13.0"
-  },
   "scripts": {
     "serve": "live-server public/",
     "build:dev": "webpack",
