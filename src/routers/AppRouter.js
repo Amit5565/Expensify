@@ -23,7 +23,7 @@ const AppRouter=()=>(
     <Route path="/create"  exact={true} component={AddExpensePage}/>
     <Route path="/help" exact={true}  component={HelpPage} />
 
-    <Route path="/edit/:id" exact={true} component={EditExpensePage} />
+    <Route path="/edit/:id"  exact={true}  component={EditExpensePage} />
     <Route component={NotFoundPage} exact={true}/>
     </Switch>
     </div>
@@ -32,4 +32,3 @@ const AppRouter=()=>(
 )
 
 export default AppRouter
-

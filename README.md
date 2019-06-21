@@ -63,3 +63,23 @@ return {
 export default ConnectedExpenseList;
 
 #Component connected to redux store gets refreshed all by itself
+
+#DatePicker
+
+import 'react-dates/initialize';
+import {SingleDatePicker} from 'react-dates'
+import 'react-dates/lib/css/_datepicker.css';
+
+
+            <SingleDatePicker
+            date={this.state.createdAt}
+            onDateChange={this.onDateChange}
+            focused={this.state.calendarFocused}
+            onFocusChange={this.onFocusChange}
+            />
+            <div>
+            <textarea placeholder="Add a note for your expense (optional)"
+            
+            value={this.state.note}
+            onChange={this.onNoteChange}
+            >

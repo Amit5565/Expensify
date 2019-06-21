@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Switch, Link, NavLink} from "react-router-dom"
 
 const Header=()=>(
     <header>
-    <h1>Expenify</h1>
+    <h1>Expensify</h1>
     <ul>
    
     <li> <NavLink  exact={true} to="/" activeClassName="is-active"  >Go Home</NavLink></li>
