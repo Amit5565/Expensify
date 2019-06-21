@@ -5,9 +5,9 @@
   "author": "Amit Kumar Singh",
   "license": "MIT",
   "engines": {
-    "node": "10.3.0",
-    "npm":"6.4.1",
-    "yarn":"1.13.0"
+    "node": "10.10.0",
+    "npm": "6.4.1",
+    "yarn": "1.13.0"
   },
   "scripts": {
     "serve": "live-server public/",
@@ -50,5 +50,14 @@
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.1"
   },
-  "repository": "https://github.com/Amit5565/Expensify.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amit5565/Expensify.git"
+  },
+  "description": "# ES-6 destructuring",
+  "bugs": {
+    "url": "https://github.com/Amit5565/Expensify/issues"
+  },
+  "homepage": "https://github.com/Amit5565/Expensify#readme",
+  "devDependencies": {}
 }
