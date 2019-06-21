@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
 import { Provider } from "react-redux";
-import AppRouter from "./routers/Approuter.js";
+import AppRouter from "./routers/AppRouter.js";
 import { addExpense } from "./actions/expenses.js";
 import { setTextFilter } from "./actions/filters";
 import getVisibleExpenses from "./selectors/expenses";
