@@ -9,22 +9,90 @@ const firebaseConfig = {
     messagingSenderId: "458383824312",
     appId: "1:458383824312:web:5e57250fa873e999"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+ 
+   // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+   const database=firebase.database()
 
-  const database=firebase.database()
-  database.ref().set({
-      name:"Amit",
-      age:19,
-      isSingle:true,
-      location:{
-          city:"Delhi",
-          country:"India"
-      },
-  })
+   //Fetching data
 
-  database.ref('age').set(20)
-   database.ref('location/city').set("New Delhi");
+//  1.
+// database.ref()
+// .once('value')
+// .then((snapshot)=>{
 
-   database.ref('attributes/height').set("176 cm");
-   database.ref('attributes/weight').set("76 kg");
+//     const val=snapshot.val();
+//     console.log(val);
+    
+
+// }).catch((e)=>{
+//     console.log("Error fetching data",e);
+    
+// })
+
+
+
+// const onValueChange=database.ref().on('value',(snapshot)=>{
+
+//     console.log(snapshot.val());
+    
+// },(e)=>{
+//     console.log("Error in fetching data",e);
+    
+// })
+
+//To unsubscribe to on
+//database.ref().off(onValueChange)
+
+
+
+
+  //.set() return a promise
+
+//   database.ref().set({
+//       name:"Amit",
+//       age:20,
+//       isSingle:true,
+//       location:{
+//           city:"Delhi",
+//           country:"India"
+//       },
+//   }).then(()=>{
+//       console.log("Success");
+      
+//   }).catch((e)=>{
+//       console.log("Error occured :",e);
+      
+//   })
+
+
+  //Removing data from database
+
+//  1.database.ref().set(null)
+
+// 2. database.ref().remove().then(()=>{
+//     console.log("Success");
+    
+// }).catch((e)=>{
+
+//     console.log("error :" ,e);
+    
+// })
+
+
+// Updating data
+
+
+// database.ref().update({
+//     "location/city":"Model Town"
+// })
+
+
+
+database.ref().on('value',(snapshot)=>{
+
+    const name=snapshot.val().name;
+    const city=snapshot.val().location.city;
+    console.log(`${name} lives in ${city} `);
+    
+})

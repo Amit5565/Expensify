@@ -15,6 +15,8 @@ import configureStore from "./store/configureStore";
  import "./styles/styles.scss"
 import 'react-dates/lib/css/_datepicker.css'
 
+//Promises
+// import './playground/promises'
 
 //FIREBASE
 import './firebase/firebase'
