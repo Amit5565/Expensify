@@ -19,7 +19,7 @@ import 'react-dates/lib/css/_datepicker.css'
 // import './playground/promises'
 
 //FIREBASE
-import './firebase/firebase'
+import {firebase} from './firebase/firebase'
 const store = configureStore();
 
  store.dispatch(addExpense({ description: "Water bill", amount: 156 }));
