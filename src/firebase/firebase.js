@@ -31,4 +31,4 @@ const firebaseConfig = {
 //   })
 
 
-export { database as default}
+export { firebase , database as default}
