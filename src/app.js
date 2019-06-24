@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
 import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter.js";
-import { addExpense } from "./actions/expenses.js";
+import { startSetExpenses } from "./actions/expenses.js";
 import { setTextFilter } from "./actions/filters";
 import getVisibleExpenses from "./selectors/expenses";
 import configureStore from "./store/configureStore";
@@ -22,9 +22,9 @@ import 'react-dates/lib/css/_datepicker.css'
 import {firebase} from './firebase/firebase'
 const store = configureStore();
 
- store.dispatch(addExpense({ description: "Water bill", amount: 156 }));
-store.dispatch(addExpense({ description: "Gas bill" ,createdAt:1000}));
-store.dispatch(addExpense({ description: "Rent", amount: 1234 }));
+//  store.dispatch(addExpense({ description: "Water bill", amount: 156 }));
+// store.dispatch(addExpense({ description: "Gas bill" ,createdAt:1000}));
+// store.dispatch(addExpense({ description: "Rent", amount: 1234 }));
 
 console.log("testing");
 
@@ -43,6 +43,12 @@ const jsx = (
   </Provider>
 );
 
+
+ReactDOM.render(<p>Loading....</p>, document.getElementById("app"));
+
+store.dispatch(startSetExpenses()).then(() =>{
+
+})
 ReactDOM.render(jsx, document.getElementById("app"));
 
 

@@ -13,11 +13,6 @@ import {Link} from 'react-router-dom'
    {numeral(amount/ 100).format('$0,0.00')} 
    - 
    {moment(createdAt).format("Do MMMM,YYYY")}</p>
-   <button onClick={()=>{
-
-      dispatch(removeExpense({id}))
-   }}>
-   Remove</button>
     </div>
 )
 
