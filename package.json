@@ -40,6 +40,7 @@
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
+    "templates.js": "^0.3.11",
     "uuid": "^3.3.2",
     "validator": "8.0.0",
     "webpack-dev-server": "^3.7.1"
