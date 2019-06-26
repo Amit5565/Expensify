@@ -29,3 +29,20 @@ promise.then((data)=>{
 })
 
 console.log('after');
+
+
+#Setting google authentication
+
+->In firebase.js file
+ const googleAuthProvider=new firebase.auth.GoogleAuthProvider();
+
+ #history command
+
+ for redirecting to login and logout page use npm install history command
+
+ import createHistory from 'history/createBrowserHistory'
+
+ Also change BrowserRouter to Router
+
+ #...rest
+ It provides all the remaining components of an object
