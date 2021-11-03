@@ -48,7 +48,7 @@
     "redux-thunk": "^2.3.0",
     "templates.js": "^0.3.11",
     "uuid": "^3.3.2",
-    "validator": "8.0.0",
+    "validator": "13.7.0",
     "webpack-dev-server": "^3.7.1"
   },
   "repository": {
