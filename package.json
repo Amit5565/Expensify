@@ -30,7 +30,7 @@
     "express": "^4.17.1",
     "firebase": "^6.2.2",
     "history": "^4.7.2",
-    "json5": "^2.1.0",
+    "json5": "^2.2.2",
     "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
